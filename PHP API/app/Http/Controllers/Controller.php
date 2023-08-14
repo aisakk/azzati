@@ -16,6 +16,8 @@ class Controller extends BaseController
         $qrcode = new QRCode();
 
          return response()->json([
+            "status"=> 200,
+            "message"=> "Exitosa la conexion",
             "data" => $qrcode->render($text)
          ]);
     }
